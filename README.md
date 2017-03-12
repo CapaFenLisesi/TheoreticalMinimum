@@ -8,9 +8,9 @@ These are my notes to [_The Theoretical Minimum: What You Need to Know to Start 
 This project is under the MIT Licence. See the [LICENCE](LICENCE.md) file for details.
 
 ### Lecture Notes
-**NOTE:** these notebooks are still being worked on. Also, I haven't subjected them to non-academic (1) peer review yet. You should also check out George Hrabovsky's [solutions](http://www.madscitech.org/tm/slns/).
+**NOTE:** these notebooks are still being worked on. Also, I haven't subjected them to non-academic (1) peer review yet. I recommend that you check out George Hrabovsky's [Theoretical Minimum Website](http://www.madscitech.org/tm/), and his [solutions page](http://www.madscitech.org/tm/slns/).
 
-1. The Nature of Classical Physics: [lecture1.ipynb](lecture1.ipynb)
+1. **The Nature of Classical Physics: _[lecture1.ipynb](lecture1.ipynb)_**
 
 ### Footnotes
-(1) Non-academic here refers to an "informal" system of peer review, or in other words, I ask my friends, university professors who have the time, technical editors, and perhaps some redditors for feedback. I urge you to be sceptical when reading through my notes, to make use of your critical thinking skills, and feel free to  [contact me](https://hackermaneia.keybase.pub/contact.html) if you find any errata or errors in my work.
+(1) Non-academic here refers to an "informal" system of peer review. In other words, I ask my friends, university professors who have the time, technical editors, and perhaps some redditors for feedback. I urge you to be sceptical when reading through my notes, to make use of your critical thinking skills, and feel free to  [contact me](https://hackermaneia.keybase.pub/contact.html) if you find any errata or errors in my work.
