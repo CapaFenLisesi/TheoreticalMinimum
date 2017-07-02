@@ -1,9 +1,9 @@
 = Preliminary Math for Physics =
 
-__TOC__
-
 == Introduction ==
 This is more of a "cheat sheet" for mathematical concepts that you will be using in physics. I will include links to sources (both free and proprietary) that are more comprehensive when discussing and teaching these subjects.
+
+__TOC__
 
 == Algebra ==
 
