@@ -2,15 +2,13 @@
 
 ### Introduction
 
-These are my notes to [_The Theoretical Minimum: What You Need to Know to Start Doing Physics_](https://www.amazon.com/gp/product/046502811X), a book that--like the title implies--tries to teach rudimentary classical physics in a somewhat informal, hacker-esque manner. These are formatted in [Jupyter](https://jupyter.org/) (IPython) notebooks. I also go through some of the exercises in the "lectures", or chapters. 
+This started out as my notes for _[The Theoretical Minimum: What You Need to Know to Start Doing Physics](https://www.amazon.com/Theoretical-Minimum-Start-Doing-Physics/dp/0465075681)_ by Leonard Susskind and George Hrabovsky, but I want to grow it into a set of tools to help anyone learn physics.
 
-### Licensing
-This project is under the MIT Licence. See the [LICENCE](LICENCE.md) file for details.
+### Licencing
+This project is under the MIT Licence. See the [LICENCE](LICENCE) file for details.
 
-### Lecture Notes
-**NOTE:** these notebooks are still being worked on. Also, I haven't subjected them to non-academic (1) peer review yet. I recommend that you check out George Hrabovsky's [Theoretical Minimum Website](http://www.madscitech.org/tm/), and his [solutions page](http://www.madscitech.org/tm/slns/).
+__DISCLAIMER:__ The information and tools found within this repository is made on an __AS IS__ basis. The author(s) of
 
-1. **The Nature of Classical Physics: _[lecture1.ipynb](lecture1.ipynb)_**
+### Reference
 
-### Footnotes
-(1) Non-academic here refers to an "informal" system of peer review. In other words, I ask my friends, university professors who have the time, technical editors, and perhaps some redditors for feedback. I urge you to be sceptical when reading through my notes, to make use of your critical thinking skills, and feel free to  [contact me](https://hackermaneia.keybase.pub/contact.html) if you find any errata or errors in my work.
+* __[Preliminary Maths:](PreliminaryMaths.wiki)__ if you're looking to brush up on your maths 
