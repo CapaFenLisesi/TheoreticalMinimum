@@ -7,6 +7,3 @@ This started out as my notes for _[The Theoretical Minimum: What You Need to Kno
 ## Licensing
 This project is under the MIT Licence. See the [LICENSE](LICENSE) file for details. __DISCLAIMER:__ The information and tools found within this repository is provided on an __AS IS__ basis. The author(s) of this resource do not take responsibility for any damages or losses as a result of using it.
 
-## Reference
-
-* __[Preliminary Maths:](PreliminaryMaths.wiki)__ if you're looking to brush up on your maths 
