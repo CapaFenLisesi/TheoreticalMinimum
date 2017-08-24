@@ -4,6 +4,15 @@ This started out as my notes for _[The Theoretical Minimum: What You Need to Kno
 
 __Table of Contents__
 * [Licensing](#Licensing)
+* [Problem Sets](#Problem Sets)
 
 ## Licensing
 This project is under the MIT Licence. See the [LICENSE](LICENSE) file for details. __DISCLAIMER:__ The information and tools found within this repository is provided on an __AS IS__ basis. The author(s) of this resource do not take responsibility for any damages or losses as a result of using it.
+
+## Problem Sets...
+... and their solutions
+
+These are problems that I worked on, usually from random books or website challenges.
+
+* [Doing Math With Python:](./BOOK_DMWP) these are solutions to problems from the book _[Doing Math with Python: Use Programming to Explore Algebra, Statistics, Calculus, and More!](https://www.nostarch.com/doingmathwithpython)_, which aims to introduce the reader to the Python scientific computing stack.
+* [Project Euler:](./SITE_PROEULER) solutions to some of the problems from [projecteuler.net](https://projecteuler.net). I'm not going to make the solutions public, but if you're an employer, feel free to request a copy.
