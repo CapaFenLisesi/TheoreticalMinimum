@@ -4,12 +4,12 @@ This started out as my notes for _[The Theoretical Minimum: What You Need to Kno
 
 __Table of Contents__
 * [Licensing](#Licensing)
-* [Problem Sets](#Problem Sets)
+* [Problem Sets](#Problems)
 
 ## Licensing
 This project is under the MIT Licence. See the [LICENSE](LICENSE) file for details. __DISCLAIMER:__ The information and tools found within this repository is provided on an __AS IS__ basis. The author(s) of this resource do not take responsibility for any damages or losses as a result of using it.
 
-## Problem Sets...
+## Problems...
 ... and their solutions
 
 These are problems that I worked on, usually from random books or website challenges.
