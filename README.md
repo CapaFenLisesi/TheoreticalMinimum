@@ -6,10 +6,10 @@ This started out as my notes for _[The Theoretical Minimum: What You Need to Kno
 This project is under the MIT Licence. See the [LICENCE](LICENCE) file for details. __DISCLAIMER:__ The information and tools found within this repository is provided on an __AS IS__ basis. The author(s) of this resource do not take responsibility for any damages or losses as a result of using it.
 
 ## Problem Sets
-* [Doing Math With Python:](./problems/Textbook%20-%20Doing Math With Python) these are solutions to problems from the book _[Doing Math with Python: Use Programming to Explore Algebra, Statistics, Calculus, and More!](https://www.nostarch.com/doingmathwithpython)_, which aims to introduce the reader to the Python scientific computing stack.
+* [Doing Math With Python:](./problems/Textbook%20-%20Doing%20Math%20With%20Python) these are solutions to problems from the book _[Doing Math with Python: Use Programming to Explore Algebra, Statistics, Calculus, and More!](https://www.nostarch.com/doingmathwithpython)_, which aims to introduce the reader to the Python scientific computing stack.
 * [Project Euler:](./problems/Project%20Euler) solutions to some of the problems from [projecteuler.net](https://projecteuler.net). I'm not going to make the solutions public, but if you're an employer, feel free to request a copy.
 
 ## Coursework
 
 ### edX
-* [Data Science](./courses/Microsoft%20-%20Data%20Science) a ten course programme by Microsoft that teaches that field of applied statistics called data science.
+* [Data Science:](./courses/Microsoft%20-%20Data%20Science) a ten course programme by Microsoft that teaches that field of applied statistics called data science.
