@@ -4,6 +4,8 @@
 
 A showcase of the work I've complete learning undergraduate material, both at the university and at home.
 
+<a href="https://patreon.com/gaussian"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" /></a>
+
 ## Licencing
 This project is under the MIT Licence. See the [LICENCE](LICENCE) file for details.
 
