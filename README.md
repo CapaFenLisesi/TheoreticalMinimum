@@ -1,6 +1,6 @@
 
 <br/><br/>
-[![TM Logo][logo]](./tmlogo.png)
+<img style="text-align:center;" src="./README_banner.png">
 <br/><br/>
 
 A showcase of the work I've complete learning undergraduate material, both at the university and at home.
