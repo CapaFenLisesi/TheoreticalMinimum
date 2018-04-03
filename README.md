@@ -1,6 +1,6 @@
 
 <br/><br/>
-<img style="text-align:center;" src="./README_banner.png">
+<img style="text-align:center;" src="./tmlogo.png">
 <br/><br/>
 
 A showcase of the work I've complete learning undergraduate material, both at the university and at home.
