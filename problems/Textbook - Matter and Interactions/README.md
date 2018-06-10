@@ -8,7 +8,7 @@ Rhett Allain<sup>\[1\]\[2\]\[3\]\[4\]\[5\]</sup> is a physicist and science educ
 
 |__Chapter__|__Problem__|__Type__|__Solution__|__Description__|
 |----------:|----------:|:-------|:-----------|:--------------|
-| 1 | #68 | Programming | [c1p68.py](./vol1/ch1/ch1p68.py) | I render a bunch of spheres and arrows |
+| 1 | #68 | Programming | [c1p68.py](./vol1/ch1/c1p68.py) | I render a bunch of spheres and arrows |
 
 ### Volume II
 
