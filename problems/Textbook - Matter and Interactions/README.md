@@ -1,6 +1,6 @@
 # Matter and Interactions: Fourth Edition
 
-Rhett Allain<sup>\[1\]\[2\]\[3\]\[4\]\[5\]</sup> is a physicist and science educator. He recommended a textbook called _Matter & Interactions<sup>\[6\]</sup> (ISBN-13: 978-1118875865) which is unique in the sense that in addition to its typical problem sets involving pencil and paper, it also has Python programming problem sets. These are my solutios to some<sup>\[7\]</sup> of its problems.
+Rhett Allain<sup>\[1\]\[2\]\[3\]\[4\]\[5\]</sup> is a physicist and science educator. He recommended a textbook called _Matter & Interactions_<sup>\[6\]</sup> (ISBN-13: 978-1118875865) which is unique in the sense that in addition to its typical problem sets involving pencil and paper, it also has Python programming problem sets. These are my solutios to some<sup>\[7\]</sup> of its problems.
 
 ## Problems and their Solutions
 
