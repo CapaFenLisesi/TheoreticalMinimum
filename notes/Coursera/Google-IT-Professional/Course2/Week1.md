@@ -99,6 +99,7 @@
 
 * A __twisted pair cable__ features pairs of copper wires that are twisted together.
     * Twisted pair protects from electromagnetic interference and crosstalk.
+    * The Twisted Pair Cable uses line coding as its type of modulatuion
 
 * A standard Cat6 cable consists of eight (8) wires consisting of four (4) twisted pairs inside a single jacket.
 * These kind of cables typically allow for duplex communication.
