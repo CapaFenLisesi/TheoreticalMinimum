@@ -118,3 +118,46 @@
 * A __patch panel__ is a device containing many network ports, but does no other work
 
 ## The Data Link Layer
+
+### Ethernet and MAC Address
+
+* __Ethernet__ is a standard that allows network hardware to be "abstracted" and "standardized" so that one need not worry about the different kinds of network hardware.
+    * Example: your web browser doesn't need to know if your device is working with a twisted-pair or wireless connection, it just needs a standard like Ethernet to do the work. 
+* Ethernet (along with __Wi-Fi__) operates within layer 2 of the TCP/IP model, the "data link" layer.
+* __Carrier-sense multiple access with collision detection (CSMA/CD)__ is used to determine when the communication channels are clear, and when a device is free to transmit data.
+* __Hexidecimal__ is a numbering system that uses sixteen (16) digits to represent numbers. They employ the letters A, B, C, D, E, and F to do this. For the hexidecimal number system, consult the table below:
+
+|__Decimal__|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|
+|-----------|-|-|-|-|-|-|-|-|-|--|--|--|--|--|--|
+|__Hexadecimal__|1|2|3|4|5|6|7|8|9|A|B|C|D|E|F|
+
+* A __MAC Address__ is a globally unique identifier attached to an individual network interface; it's a 48-bit number normally represented by six groupings of two hexadecimal numbers.
+
+* An __octet__ is any number that can be represented in eight (8) bits, this is commonly used in computer networking.
+* A MAC address is typically split into two (2) sections:
+    * The first three (3) octets are the __organizationally unique identifier (OUI)__, which are assigned to individual hardware manufacturers by the IEEE
+    * The second three (3) octers are vendor assigned. They can be assigned any number possible, with the exception that the number assigned is unique and can be only assigned once.
+    
+    ||Organizationally Unique Identifier|Vendor Assigned (NIC Cards, Interfaces)|
+    |----------------------|-----------------------|----------------------------|
+    |Size (in bits)|24 bits|24 bits|
+    |Size (in hex)|6 hex digits|6 hex digits|
+    |Example|00 60 2F|3A 07 BC|
+    |Structure|Cisco|Particular Device|
+    
+* Ethernet uses MAC addresses to ensure that the data it sends has both an address for the machine that sent the transmission, as well as the one the transmission was intended for
+
+### Unicast, Multicast and Broadcast
+
+* A __unicast__ transmission is always meant for just one receiving address
+    * If the least significant bit in the first octet of a destination address is set to zero, it means that the ethernet frame is intended for only the destination address.
+    
+* If the least significant bit in the first octet of a destination address is set to one, it means that you're dealing with a __multicast frame__. This means that the data will be broadcasted to the devices on the local network segment, and devices may discard it depending on its configuration other than MAC address
+
+* Finally, a __broadcast__ is where data is sent to every single device on the local area network. This is accomplished by sending data to the broadcast address (FF:FF:FF:FF:FF:FF in Ethernet). Broadcasts are used so that nodes and devices can discover one another. 
+
+### Disecting the Ethernet Frame
+
+* A __data packet__ is an all-encompasing term that represents any single set of binary data being sent across a network link.
+* Data packets at the Ethernet level are known as Ethernet Frames
+* An __Ethernet frame__ is a highly structured collection of information presented in a specific order
