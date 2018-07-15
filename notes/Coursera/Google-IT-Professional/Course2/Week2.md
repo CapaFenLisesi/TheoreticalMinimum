@@ -78,8 +78,8 @@ All of this is done through the process of encapsulation, which can be seen belo
 
 |Class|Range|Max Hosts|
 |-----|-----|---------|
-|A|0-126|~16 Million|
-|B|128-191|64,000|
+|A|0-126|16,777,216|
+|B|128-191|65,536|
 |C|192-224|254|
 |D|224-239|N/A|
 |E|240-255|N/A|
@@ -95,6 +95,69 @@ All of this is done through the process of encapsulation, which can be seen belo
 * ARP table entries generally expire after a short amount of time to ensure changes in the network are accounted for
 
 ## Subnetting
+
+* __Subnetting__ is the process of taking a large network and splitting it up into many individual and smaller subnetworks, or subnets
+* Incorrect subnetting setups are a common problem you might run into as an IT support specialist, so it's important to have a strong understanding of how it works.
+
+### Subnet Masks
+
+* With subnets, part of the host ID of an IP address would be used to form a subnet ID.
+* At the internet level, core routers only care about the network ID and use it to send the datagram to appropriate networks.
+* Subnet IDs give the datagram additional information to send the datagram to the destination machine, or the next router in the network.
+
+* The host ID finally provides the last bit of information for the last router on where to deliever the datagram
+* A __subnet mask__ is a 32-bit number that is normally written out as four octers in decimal
+* Subnet ID's are calculated via a subnet mask
+
+* For example: given an IP address of *9.100.100.100*, 
+
+|IP Address|9|100|100|100|
+|----------|-|---|---|---|
+|In Binary |0000 1001|0110 0100|0110 0100|0110 0100|
+|Subnet Mask|255|255|255|0|
+|Subnet Mask (in binary)|1111 1111|1111 1111|1111 1111|0000 0000|
+
+* The subnet mask can be seen as a "special" IP address that tells us (in the forms of 1's) what we can ignore when calculating the host ID. The part with all the 0's tell us what to keep when computing the host ID.
+* The subnet mask's purpose is to tell a router what is the subnet ID of the network in question
+* A single 8-bit number can represent 256 different different numbers, or more specifially, the numbers 0-255.
+
+### Basic Binary Math
+
+* There are two basic operators in binary arithmetic, __OR__ and __AND__.
+* In computer logic, a 1 represents true and a 0 represents false.
+
+* A __subnet mask__ is a way for a computer to use and operators to determine if an IP address exists on the same network
+* When applying an __AND__ operation with the example IP address of _9.100.100.100_ against the subnet mask of _255.255.255.0_, we get the network ID of the network in question
+
+Example:
+
+|IP Address|9|100|100|100|
+|----------|-|---|---|---|
+|__AND__|||||
+|Subnet Mask (in binary)|1111 1111|1111 1111|1111 1111|0000 0000|
+|__=__|||||
+||9|100|100||
+
+* The computer can now make a comparison using this result to determine if the network ID indicates that it's on the same network or if it's on a different network
+
+### CIDR
+
+__Subnet Masks and IP Address__
+
+|Class|Mask Short Name|Max Hosts|
+|-----|---------------|---------|
+|A|255.0.0.0|/8|16,777,214|
+|B|255.255.0.0|/16|65,534|
+|C|255.255.255.0|/24|254|
+| |255.255.255.224|/27|30|
+| |255.255.255.252|/30|2|
+
+* To __demarcate__ means to set something off
+* The __demarcation point__ is how we describe where one network or system ends, and another one begins
+* __Classless Inter-Domain Routing (CIDR)__ a flexible approach on describing blocks of IP Addresses. It expands on the notion of subnetting to demarcate networks.
+    * __CIDR Notation__ is the /\[number\] notation
+    * CIDR abandons the idea of classes entirely, allowing an address to be defined by two individual IDs 
+    * CIDR allows for more arbitrary network sizes
 
 ## Routing
 
