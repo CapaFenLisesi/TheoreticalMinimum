@@ -93,4 +93,27 @@
 
 ## The Physical Layer
 
+* The __bit__ is the smallest unit of data that a computer can understand; it's a one (1) or a zero (0)
+* __Modulation__ is a way of varying the voltage of this charge moving across the table
+* __Line coding__ allows devices on either end of the link to understand that an electrical charge is at a 0 or 1. About 10 billion bits can be moved around every second!
+
+* A __twisted pair cable__ features pairs of copper wires that are twisted together.
+    * Twisted pair protects from electromagnetic interference and crosstalk.
+
+* A standard Cat6 cable consists of eight (8) wires consisting of four (4) twisted pairs inside a single jacket.
+* These kind of cables typically allow for duplex communication.
+* __Duplex Communication__ is the notion that information can flow in both directions across the cable. 
+     * __Full Duplex__ is the notion that both nodes can communicate with one another at the same time.
+     * __Half Duplex__ is the notion that both nodes can communicatw with one another whilst "taking turns"
+* __Simplex Communication__ is the notion that information flow is unidirectional.
+
+* __Network Ports__ are the mechanisms that expose the information being transmitted on the wire to different interfaces; they are generally directly attached to the devices that make up a computer network.
+    * A common __plug__ specification is the RJ45 plug and it's respective RJ45 __port__
+    
+* Network ports typically have two LEDs, the Link LED and the Activity LED.
+    * The __Link LED__ is lit when a compatible network plug is connected to the network port.
+    * The __Activity LED__ is lit when information is being transmitted across the cable.
+    
+* A __patch panel__ is a device containing many network ports, but does no other work
+
 ## The Data Link Layer
