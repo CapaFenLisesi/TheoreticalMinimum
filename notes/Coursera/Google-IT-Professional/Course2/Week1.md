@@ -50,6 +50,47 @@
 
 ## The Basics of Networking Devices
 
+### Cables
+
+* __Cables__ are what connect different devices to each other, allowing data to be transmitted over them
+    * Cables can be split into two categories: copper and fibre
+    * __Copper__ cables are the most common kind of networking cables, they are made up of multiple pairs of copper wires inside plastic insulators. Copper wires send data by changing the voltage between two ranges. The "recieving end" can then recieve these voltages and interpret them as 0's and 1's which can be translate into different kinds of data.
+        * The most common forms of copper twisted-pair cables used in networking are __Cat5__ (older), __Cat5e__ and __Cat6__ cables. "Cat" is a shorthand for "category". Different categories have different physical characteristics.
+        * How the copper wire is twisted can make a huge difference in the transmission rate of data, and how resistant they are to outside interference.
+    * __Crosstalk__ is what happens when an electric pulse on one wire is accidentally detected on another wire.
+        * As a result, the "recieving end" is unable to recieve the data, resulting in error.
+    * Cat5e cables are made in a way that makes it less likely that data needs to be retransmitted. More data can be transferred in a small amount of time.
+    * Cat6 cables are even more strict in their specifications to avoid crosstalk. Cat6 cables can transmit more data at a faster rate than Cat53, but are shorter as a trade-off for speed and reliability.
+    * __Fibre optic cables__ are the second category of cables, which contain individual optical fibres, which are tiny tubes made out of glass, with the width the size of a human hair. They transport beams of light, using pulses of light to represent 0's and 1's, and can even resist electromagnetic interference. The only drawback is that they're more fragile and expensive.
+        * As an added bonus, fibre wires can transfer data at longer distances than copper!    
+
+* You are more likely to run into fibre wires in a data centre, and run into copper wires at small homes.
+
+### Hubs and Switches
+
+* A __collision domain__ is a network segment where only one device can communicate at a time; if multiple systems try sending data at the same time, the electrical pulses sent across the cable can intefere with each other.
+
+* Point-to-point network connects can be useful in some settings, but we need to connect multiple computers at the same instance. That's where hubs and switches comes in.
+    * A __hub__ is a physical layer device that allows for connections from many computers at once. Hubs are rare because they rely on a collision domain, which is undesirable.
+    * A __network switch__ is similar to a hub, but rather than operating on the "physical", "layer 1" part of the network, it operates on the "data link", "layer 2" part of the network, meaning that it can inspect the contents of the Ethernet protocol data, and work out where data should be sent to. This almost eliminates collision domains.
+    
+* Hubs and switches are the primary devices used to connect computers on a single network, usually refered to a __LAN__ or __local area network__.
+
+### Routers
+
+* A __router__ is a device that knows how to forward data between independent networks
+    * Routers operate on layer 3, the "network" part of the TCP/IP Five-Layer Model.
+    * Routers inspect IP data to determine where to send content.
+* ISP = Internet Service Provider
+* The __Border Gateway Protocol__ is what allows routers to share data with each other. It lets them learn about the most optimal paths to forward traffic.
+
+### Servers and Clients
+
+* __Nodes__ refer to the devices on the network (laptop, desktop smartphone, IOT device, etc.)
+* A __client__ is something that requests data whilst a __server__ is something that responds with data.
+* Nodes can act as both clients and servers at some capacity
+    * i.e. an node that's primary purpose is to act as an email server may occationally make DNS requests or a desktop server can occationally respond with data.
+
 ## The Physical Layer
 
 ## The Data Link Layer
