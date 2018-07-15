@@ -161,3 +161,14 @@
 * A __data packet__ is an all-encompasing term that represents any single set of binary data being sent across a network link.
 * Data packets at the Ethernet level are known as Ethernet Frames
 * An __Ethernet frame__ is a highly structured collection of information presented in a specific order
+
+![ethernet frame](../assets/course2_ethernet_frame.png)
+
+* A __preamble__ is eight (8) bytes (or 64 bits) long, and can itself be split into two sections
+* The __Start frame delimiter (SFD)__ signals to a reciving device that the preamble is over and that the actual frame contents will not follow.
+* The __EtherType field__ is 16 bits long and used to describe the protocol of the contents of the frame
+* The __VLAN header__ indicates that the frame itself is what's called a VLAN frame
+* __Virtual LAN (VLAN)__ is a technique that lets you have multiple logical networks operating on the same physical equiptment.
+* A __payload__ in networking terms, is the actual data being transported, which is everything that isn't the header or footer
+* The __Frame Check Sequence__, the footer, a four (4) byte (32 bit) number that represents the checksum value for the entire frame, such a checksum is calculated by performing what's known as a cyclical redundancy check against the frame
+* __Cyclical Redundancy Check (CRC)__ is an important concept for data integrity and is used all over computing, not just network transmissions---this is a mathematical transformation that uses polynomial divison to create a number that represents a larger set of data.
