@@ -161,3 +161,50 @@ __Subnet Masks and IP Address__
 
 ## Routing
 
+### Basic Routing Concepts
+
+* A __router__ is a network device that forwards traffic depending on the destination address of that traffic
+
+### Router Tables
+
+* A __routing table__ 
+* Fun fact: the first routers were the equivilent of desktop computers with their routing tables being manually updated.
+    * It's also possible to build a DIY router today with a computer with two interfaces and a manually updated routing table
+    
+* Routing Tables have four columns:
+    * The __destination network__, which contains a row for each network that the router knows about; aka the remote network (which again, consists of a network ID and a subnet mask). They can be stored in one column/row in CIDR notation
+    * The __next hop__, which is the IP address of the next router to recieve data indended for the destination network in question. It can also just state that the network is already connected, and there aren't any additional hops to go through
+    * The __total hops__, a crucial component to how routers and routing tables work. There are so many paths to get from a source point to a destination point. Routers like to take the shortest paths, but the shortest possible path can change over time for a variety of reasons
+    * The __interface__, that the router should forward traffic matching the destination network out of
+    
+* It should be noted that core internet routers have millions of rows in their tables.
+
+### Interior Gateway Protocols
+
+* __Router Protocols__ are special protocols that routers use to share with each other what information that they may have
+    * Routing protocols fall into two main categories: _interior gateway protocols_ and _exterior gateway protocols_
+* An __Autonomous System__ is a collection of networks that all fall under the control of a single network operator
+    * e.g. a large corporation that needs to forward data between their various networks, or a ISP that has national
+* __Interior gateway protocols__ are used by routers to share information within a single autonomous system
+    * they are further split into two categories: _link state routing protocols_ and _distance-vector protocols_
+
+### Exterior Gateway Protocols
+
+* The __Internet Assigned Numbers Authority (IANA)__ is a non-profit organization that helps manage things like IP address allocation
+    * Along with managing IP address allocation, the __IANA__ is also responsible for the __ASN__ or the __Autonomous System Number__ allocation
+* __Autonomous System Numbers (ASN)__ are numbers assigned to individual autonomous systems.
+
+### Non-Routable Address Space
+
+* The IP address, a single 32-bit number, can represent 4,294,967,295 unique numbers.
+    * seems like a lot, but since we have 7.5 billion humans (as of 2017), there won't be enough IP Addresses for everyone; the IPv4 standard can't serve everyone
+    
+* RFC = __Request for Comments__ - a set of standards on how the internet would run
+* __Non-Routable Address Space__ is a definition of IP address ranges that do not direct to other routers
+* __Network Address Translation (NAT)__ allows for devices on non-routable address space to communicate with other devices over the internet.
+* __RFC 1918__ defined three IP address ranges that will never be routed by core routers. 
+    * Anyone can use these ranges!
+    * They Are:
+        * 10.0.0.0/8
+        * 172.16.0.0/12
+        * 192.168.0.0/16
