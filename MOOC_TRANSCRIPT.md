@@ -24,3 +24,4 @@ This is something of a "transcript" listing the online coursework that I've take
 |18|ABG01x: Animal Breeding and Genetics|edX|Wageningen University & Research|76.0%|[9ec467e0083c4022b19c0cd49711218c](https://courses.edx.org/certificates/9ec467e0083c4022b19c0cd49711218c)|18 November, 2017|
 |19|DAT256x: Essential Mathematics for Artificial Intelligence|edX|Microsoft|84.0%|[52b4c3021ab6494e890b7e11a85f8fa8](https://courses.edx.org/certificates/52b4c3021ab6494e890b7e11a85f8fa8)|17 June, 2018|
 |20|Planning, Auditing and Maintaining Enterprise Systems|Coursera|University of Colorado|93.5%|[KSYLRT4SXDLW](https://www.coursera.org/account/accomplishments/certificate/KSYLRT4SXDLW)|6 July, 2018|
+|21|Technical Support Fundamentals|Coursera|Google|99.5%|[VUKM9PFE2XVB](https://www.coursera.org/account/accomplishments/certificate/VUKM9PFE2XVB)|19 July, 2018|
