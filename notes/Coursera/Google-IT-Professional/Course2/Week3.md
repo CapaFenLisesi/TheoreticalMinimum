@@ -71,3 +71,24 @@ The TCP control flags are (not necessaraly in order):
 
 ## The Application Layer
 
+### The Application Layer and the OSI Model
+
+The __Open Systems Interconnection (OSI) Model__ has seven layers:
+
+||Layer|
+|-|----|
+|7|Application|
+|6|Presentation|
+|5|Session|
+|4|Transport|
+|3|Network|
+|2|Data link|
+|1|Physical|
+
+* The __Session Layer__ is responsible for facilitating the communication between actual applications and the transport layer; it takes application layer data and hands it off to the __presentation layer__
+* The __Presentation Layer__ is responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question
+
+* It could be argued that the TCP/IP Five-layer model is more useful than the OSI model at least in everyday troubleshooting
+
+### All the Layers Working in Unison
+
