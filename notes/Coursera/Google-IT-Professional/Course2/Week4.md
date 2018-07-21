@@ -118,3 +118,28 @@ DHCP is accomplished in the following steps:
     5. RIPE
 
 ## VPNs and Proxies
+
+### Virtual Private Networks
+
+* __Virtual Private Networks (VPNs)__ are a technology that allows for the extension of a private or local network to hosts that might not be on that local network
+* __Two-factor authentication__ is a technique where more than just a username and password are required to authenticate
+* VPNs are not a strictly defined protocol, but, like NAT, are more varied
+
+### Proxy Services
+
+* A __Proxy Service__ is a server that acts on behalf of a client in order to access another service
+* Proxy Services can provide:
+    * Anonymity
+    * Security
+    * Content Filtering
+    * Increased Performance
+    
+* Gateway routers are an example of proxy service
+* It is a concept or abstraction, proxies exist on almost every layer of the TCP/IP networking model
+* Proxies usually refer to __web proxies__
+    * Web proxies were used originally used for increased performance, by caching websites.
+    * Web proxies are now used as content filters
+    
+* A __reverse proxy__ is a service that might appear to be a single server to external clients, but actually represents many servers living behind it
+    * Reverse proxies are useful for handling large amounts of web traffic and for load balancing
+    * Reverse proxies can also be used for decryption services
