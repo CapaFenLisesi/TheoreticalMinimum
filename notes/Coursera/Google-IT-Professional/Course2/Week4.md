@@ -98,4 +98,23 @@ DHCP is accomplished in the following steps:
 
 ## Network Address Translation
 
+### Basics of NAT
+
+* __Network Address Translation (NAT)__ is a technique rather than a universal standard, it literally takes an IP address and translates it into another. This is useful for security safeguards and when IP addresses need to be allocated; it is a techology that allows a gateway, usually a router or firewall, to rewrite the source IP of an outgoing IP datagram while retaining the original IP in order to rewrite it into the response
+* __IP masquerading__ is a security concept that allows a client to hide their source IP address
+
+### NAT and the Transport Layer
+
+* __Port preservation__ is a technique where the source port chosen by a client is the same port used by the router
+* __Port forwarding__ is a technique where specific destination ports can be configured to always be delievered to specific nodes
+
+### NAT, Non-Routable Address Space and the Limits of IPv4
+
+* __Regional Internet Registries (RIRs)__ are registries to assign IP address blocks to certain regions. They are:
+    1. AFRINIC
+    2. ARIN
+    3. APNIC
+    4. LACNIC
+    5. RIPE
+
 ## VPNs and Proxies
