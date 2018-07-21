@@ -35,7 +35,66 @@
 
 ## Name Resolution in Practice
 
+### Resource Record Types
+
+* Kinds of DNS Resource Records:
+
+|Record Name|Description|
+|-----------|-----------|
+|A record|used to point a certain domain name to a certain IPv4 IP address. Typically, single A records are configured for IP addresses, but single domain names can have multiple A records, allowing for DNS round robin which is used to balance traffic|
+|AAAA record|similar to the A record, but returns a IPv6 address instead of an IPv4 one|
+|CNAME record|used to redirect traffic from one domain name to another|
+|MX record|or "Mail Exchange", is used in order to deliever email to the correct company|
+|SRV record|or "Service Record", is used to define the location of various specific services, similar to MX but for many different service types|
+|TXT record|leave notes or messages in the DNS entry, can also be read by other computer programs for specific configs, etc.|
+
+### Anatomy of a Domain Name
+
+* A __Top Level Domain (TLD)__ is the last part of a domain name
+* The __Internet Corporation for Assigned Names and Numbers (ICAAN)__ is a non-profit organization, sister to the IANA, that both control the IP address spaces and the TLD systems.
+* __Domains__ are used to demarcate where control moves from a TLD name server to an authoritative name server
+* A __Fully qualified domain name (FQDN)__ is what we call URLs that have both a subdomain name, a domain name, and a TLD. 
+* DNS can technically support up to 127 levels of domain in total for a single fully qualified domain name
+
+### DNS Zones
+
+* __DNS Zones__ are a hierarchical concept, they don't overlap, they allow for easier control over multiple levels of a domain
+* __Zone files__ are simple configuration files that declare all resource records for a particular zone
+* __Start of authority (SOA)__ is a declaration that the zone and the name of the name server that is authoritative for it
+* __NS Records__ indicate other name servers that might also be responsible for this zone
+* __Reverse lookup zone files__ let DNS resolvers ask for an IP and get the FQDN associated with it returned
+* A __Pointer resource record (PTR)__ resolves an IP to a name
+
 ## Dynamic Host Configuration Protocol
+
+### Overview of DHCP
+
+* Networks need four primary things configured to work properly
+    1. An IP address
+    2. A subnet mask
+    3. A gateway
+    4. A name server
+    
+* The subnet mask, gateway, and name server usually have the same configuration
+* The IP address, however, has to be different for every network
+* __Dynamic Host Configuration Protocol (DHCP)__ is an application layer protocol that automates the configuration process of hosts on a network
+* You should "hard code" core servers (like DNS or HTTP) servers to that it will be easier to connect to and diagnose it if problems arise
+* __Dynamic allocation__ is a range of IP addresses that is set aside for client devices and one of these IPs is issued to these devices when they request one
+* __Automatic allocation__ is a range of IP addresses set asside for assignment purposes
+* __Fixed allocation__ requires a manually specified list of MAC addresses and their corresponding IPs
+* __Network time protocol (NTP) servers__ are used to keep all computers on a network synchronized in time
+
+### DHCP in Action
+
+DHCP is accomplished in the following steps:
+
+1. __DHCP discovery__ is the request by which a client configured to use DHCP attempts to get network configuration information by broadcasting a "discovery" request to all computers. It should be caught by the DHCP server.
+    * This is done through a specially crafter broadcast message, the DHCP server listens on port 67 and the DHCP discover message always comes from source port 68.
+2. __DHCP offer__ is a broadcast that will hopefully reach the client and tells the client that it is "offering" its DHCP services
+3. __DHCP request__ is the client's response to DHCP offer asking for an IP address
+4. __DHCP ack__ is an "acknowledgement" from the DHCP server 
+
+* This is called "DHCP lease" since the IP address assigned to the computer might expire in the future
 
 ## Network Address Translation
 
