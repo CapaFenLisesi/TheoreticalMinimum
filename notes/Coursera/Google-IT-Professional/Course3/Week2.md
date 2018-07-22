@@ -1,5 +1,5 @@
 
-* A __standard user is one who is given access to a machine but has restricted access to do things like install software or change certain settings
+* A __standard user__ is one who is given access to a machine but has restricted access to do things like install software or change certain settings
 * An __administrator (admin)__ is a user that has complete control over a machine
 * Users segregate users into groups, group having their own default set of permissions for users
 * __Computer Management__ is a tool in Windows that is used for system administrator tasks, like setting up users and groups
@@ -20,6 +20,20 @@
 * __User Access Control (UAC)__ is a feature in Windows that prevents unauthorized changes to a system
 
 __Powershell Commands:__
-* ```Get-LocalUser`` list the current user as well as other accounts on the computer
-* ```Get-LocalGroup`` will list the groups on the local machine
-* ```Get-LocalGroupMember <group>``
+
+* `Get-LocalUser` lists the current user as well as other accounts on the computer
+* `Get-LocalGroup` will list the groups on the local machine
+* `Get-LocalGroupMember <group>` will list the members of the local group
+
+__Linux Users/Groups__
+
+* The __root__ user is the first user installed on a Linux computer, it has all the privileges, it's a "superuser"
+* The __sudoers__ file is a file located in `/etc/sudoers` that controls who has root privileges
+* In Linux, the `sudo` command is used to run as root
+* and in Linux, the `su` command allows you to "log in" to different user accounts from the shell
+* Linux "Group IDs" are stored in `/etc/groupid`
+* The file that contains user information is in `/etc/passwd`
+
+__Windows Passwords__
+
+* 
